@@ -2,9 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Frederick Swadling's personal site and software engineering portfolio." />
   <title>Frederick Swadling</title>
 </head>
 <body>
-  <a href="/">Home</a>
+  <header>
+     <h1>Frederick Swadling</h1>
+     <nav>
+        <a href="/">Home</a>
+        <a href="/experience.html">Experience</a>
+        <a href="/education.html">Education</a>
+        <a href="/publications.html">Publications</a>
+        <a href="/side-projects.html">Side projects</a>
+     </nav>
+  </header>
+  <main>
+     <h2>Experience</h2>
+     <article aria-labelledby="pelt8-heading">
+        <h3 id="pelt8-heading">Pelt8</h3>
+	<h4>Chief Software Architect</h4>
+        <p><time datetime="2022-01-01 00:00">2022</time> - <time datetime="2025-01-01 00:00">2025</time></p>
+	<p>
+           For the past three years I have been working for the Zurich-based startup Pelt8. 
+           I have lead a team of myself and two other developers in building an application to ease 
+           the collection, management and reporting of ESG data for the swiss market. The application 
+           allows customers to collect ESG data in single places, and develop custom formulae to 
+           aggregate and combine the data to get CO₂ emissions data for reporting purposes.
+        </p>
+        <p>
+	   The application is built on top of Azure, using Azure Static Web Apps and .NET for the backend,
+           Azure SQL for the database, and a React SWA using Typescript, React Router and Material UI for the frontend. 
+           The backend is a monolithic REST API that utilises a Functional core / Imperative shell architecture. 
+           The majority of the backend code is written in C#, with complex core business logic such as formula
+           calculations written in F#. Database integration and development is managed via EF Core, which 
+           we have used in a code first manner to facilitate rapid development. The front end is a React SPA that
+           uses a simple hooks based arcitecture, leveraging the standard react hooks for state management. The SPA is 
+           delivered via the Azure Front Door CDN.
+        </p>
+	<p>
+	   The application is secured via Entra. Access to the application requires signing in via Entra, which 
+           requires two-factor authentication. The application services themselves are deployed behind a virtual
+           network. Public access is turned off, and the resources communicate via private endpoints. Any access to
+           the services requires entra authentication and role based authorisation. All data storage is backed up.
+	</p>
+        <p>
+ 	   The application is developed in an Agile manner, with weekly releases from a dev environment 
+           to a production environment. CI is done using github actions and bicep for IaC. Thanks to this we 
+           can easily assure that our enviroment remains in a prescribed state, and deploy isolated 
+           environments for customers with particular security requirements or for prototyping new features.
+        </p>
+	<p>My work also involves mentoring the junior development of the team, and being a line manager.</>
+     </article>
+     <article aria-labelledby="totallyMoney-heading">
+        <h3 id="totallyMoney-heading">TotallyMoney</h3>
+        <h4>Senior Backend Engineer</h4>
+        <p><time datetime="2021-01-01 00:00">2021</time> - <time datetime="2022-01-01 00:00">2022</time></p>
+	<p>
+            I worked for the London based free credit score and price comparison app TotallyMoney. During this time I
+            worked using F# as my primary language developing microservices in AWS. Totallymoney services millions of
+            customers, so my work involved a lot of event based architecture, responding to and pushing to SNS and SQS.
+            Data storage was primarily DynamoDB and S3. High traffic meant that services needed to be resiliant to traffic 
+            spikes and service outages.
+        </p>
+	<p>
+	    I worked on the onboarding email journey, maintaining a complex state machine that delivered emails to customers 
+            on a highly dynamic schedule that could update depening on given customer actions. As well as this I also worked 
+            on the integration with open banking to further improve the accuracy of customer credit scores.
+	</p>
+     </article>
+  </main>
+  
 </body>
 </html>
