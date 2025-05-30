@@ -147,6 +147,7 @@ time {
     flex-direction: column;
     align-items: stretch;
     text-align: center;
+    gap: 0;
   }
 
   nav a {
