@@ -149,6 +149,10 @@ time {
     gap: 0.5rem;
   }
 
+  nav a {
+    border-radius: 0;
+  }
+
   main {
     padding: 0 1rem;
   }
