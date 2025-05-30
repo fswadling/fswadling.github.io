@@ -3,7 +3,6 @@
 :root {
   --primary-color: #102542; /* Deep navy blue for strong contrast */
   --secondary-color: #205375; /* Muted blue for accents */
-  --accent-color: #f76c5e; /* Vibrant coral for highlights */
   --background-color: #f9fafb; /* Very light gray for background */
   --header-bg: #fff;
   --text-color: #181818; /* Near-black for best readability */
@@ -55,7 +54,7 @@ nav a {
 }
 
 nav a[aria-current="page"] {
-  background: var(--accent-color);
+  background: var(--primary-color);
   color: #fff;
 }
 
@@ -121,7 +120,7 @@ address {
 }
 
 address a {
-  color: var(--accent-color);
+  color: var(--primary-color);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s;
@@ -129,7 +128,7 @@ address a {
 
 address a:hover {
   text-decoration: underline;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 time {
