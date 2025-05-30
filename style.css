@@ -149,3 +149,50 @@ time {
     gap: 0.5rem;
   }
 }
+
+@media print {
+  html, body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 12pt;
+    box-shadow: none !important;
+  }
+  header, nav, address {
+    box-shadow: none !important;
+    background: #fff !important;
+    color: #000 !important;
+    page-break-after: avoid;
+  }
+  main {
+    background: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 0;
+    max-width: 100%;
+  }
+  section {
+    margin-bottom: 2em;
+    page-break-inside: avoid;
+  }
+  h1, h2, h3, dt {
+    color: #000 !important;
+    background: none !important;
+    border: none !important;
+    page-break-after: avoid;
+  }
+  nav, address {
+    display: none !important;
+  }
+  a {
+    color: #000 !important;
+    text-decoration: underline;
+    word-break: break-all;
+  }
+  ul, dl {
+    margin-left: 1em;
+  }
+  @page {
+    margin: 1in;
+  }
+}
