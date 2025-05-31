@@ -20,173 +20,168 @@
   <main>
     <section aria-labelledby="pelt8-heading">
       <h2 id="pelt8-heading">Pelt8</h2>
-      <h3>Chief Software Architect</h3>
       <p><time datetime="2023-01-01">2023</time> - <time datetime="2025-01-01">2025</time></p>
-      <p>
-        I worked for the Zurich-based sustainability startup Pelt8, building from scratch a web application 
-        to ease the collection, management and reporting of ESG data for the Swiss market, and leading a 
-        team of two other developers. The application allows customers to collect ESG data in a single place, and 
-        develop custom formulae to aggregate and combine the data to get CO₂ emissions data for reporting 
-        purposes.
-      </p>
-      <p>
-        The application is built on top of Azure, using Azure Static Web Apps and .NET for the backend,
-        Azure SQL for the database, and a React SWA using Typescript, React Router and Material UI for the frontend.
-        The backend is a monolithic REST API that utilises a Functional core / Imperative shell architecture.
-        The majority of the backend code is written in C#, with complex core business logic such as formula
-        calculations written in F#. Database integration and development is managed via EF Core, which
-        we have used in a code-first manner to facilitate rapid development. The front end is a React SPA that
-        uses a simple hooks-based architecture, leveraging the standard React hooks for state management. The SPA is
-        delivered via the Azure Front Door CDN. The application is designed to be secure, scalable, and performant, meeting the security and 
-        compliance requirements of SOC2, with extra isolated deployment environments for customers with 
-        particular security needs.
-      </p>
-      <p>
-        My work spanned the entire software development lifecycle, from requirements gathering and architecture
-        design to implementation and deployment. I was responsible for the major architectural decisions, such 
-        as the choice of technology stack, the design of the database schema, and the overall architecture of 
-        the application. I also worked closely with the product owner to ensure that the application met the
-        needs of the customers, and that the development process was efficient and effective.
-      </p>
-      <p>
-        I was responsible for guiding the team in the development of the application, ensuring that
-        the codebase remained maintainable and scalable as new features were added. I established code review 
-        processes, set up automated testing and deployment pipelines via GitHub Actions and Bicep, and ensured
-        adherence to best practices such as code documentation and consistent style. I enjoyed mentoring the
-        other developers in the team, helping them to grow their skills and knowledge of the technologies we 
-        were using.
-      </p>
-      <h3>Technologies</h3>
-      <dl>
-        <dt>Azure</dt>
-        <dd>
-            Azure Static Web Apps, Azure SQL, Azure Functions, Azure Storage, Azure Front Door, 
-            Azure Virtual Network, Entra ID, API Management Service
-        </dd>
-
-        <dt>.NET Core</dt>
-        <dd>C# and F#, Azure Functions, EF Core, Functional programming</dd>
-
-        <dt>SQL Server</dt>
-        <dd>Relational database design, TSQL, indexes, triggers, row-based security</dd>
-
-        <dt>Frontend</dt>
-        <dd>React with Typescript, React Router, Material UI</dd>
-        
-        <dt>CI/CD</dt>
-        <dd>GitHub Actions, Bicep for Infrastructure as Code (IaC)</dd>
-      </dl>
+      <details>
+        <summary><h3>Chief Software Architect</h3></summary>
+        <p>
+          I worked for the Zurich-based sustainability startup Pelt8, building from scratch a web application 
+          to ease the collection, management and reporting of ESG data for the Swiss market, and leading a 
+          team of two other developers. The application allows customers to collect ESG data in a single place, and 
+          develop custom formulae to aggregate and combine the data to get CO₂ emissions data for reporting 
+          purposes.
+        </p>
+        <p>
+          The application is built on top of Azure, using Azure Static Web Apps and .NET for the backend,
+          Azure SQL for the database, and a React SWA using Typescript, React Router and Material UI for the frontend.
+          The backend is a monolithic REST API that utilises a Functional core / Imperative shell architecture.
+          The majority of the backend code is written in C#, with complex core business logic such as formula
+          calculations written in F#. Database integration and development is managed via EF Core, which
+          we have used in a code-first manner to facilitate rapid development. The front end is a React SPA that
+          uses a simple hooks-based architecture, leveraging the standard React hooks for state management. The SPA is
+          delivered via the Azure Front Door CDN. The application is designed to be secure, scalable, and performant, meeting the security and 
+          compliance requirements of SOC2, with extra isolated deployment environments for customers with 
+          particular security needs.
+        </p>
+        <p>
+          My work spanned the entire software development lifecycle, from requirements gathering and architecture
+          design to implementation and deployment. I was responsible for the major architectural decisions, such 
+          as the choice of technology stack, the design of the database schema, and the overall architecture of 
+          the application. I also worked closely with the product owner to ensure that the application met the
+          needs of the customers, and that the development process was efficient and effective.
+        </p>
+        <p>
+          I was responsible for guiding the team in the development of the application, ensuring that
+          the codebase remained maintainable and scalable as new features were added. I established code review 
+          processes, set up automated testing and deployment pipelines via GitHub Actions and Bicep, and ensured
+          adherence to best practices such as code documentation and consistent style. I enjoyed mentoring the
+          other developers in the team, helping them to grow their skills and knowledge of the technologies we 
+          were using.
+        </p>
+        <h3>Technologies</h3>
+        <dl>
+          <dt>Azure</dt>
+          <dd>
+              Azure Static Web Apps, Azure SQL, Azure Functions, Azure Storage, Azure Front Door, 
+              Azure Virtual Network, Entra ID, API Management Service
+          </dd>
+          <dt>.NET Core</dt>
+          <dd>C# and F#, Azure Functions, EF Core, Functional programming</dd>
+          <dt>SQL Server</dt>
+          <dd>Relational database design, TSQL, indexes, triggers, row-based security</dd>
+          <dt>Frontend</dt>
+          <dd>React with Typescript, React Router, Material UI</dd>
+          <dt>CI/CD</dt>
+          <dd>GitHub Actions, Bicep for Infrastructure as Code (IaC)</dd>
+        </dl>
+      </details>
     </section>
     <section aria-labelledby="totallyMoney-heading">
       <h2 id="totallyMoney-heading">TotallyMoney</h2>
-      <h3>Senior Backend Engineer</h3>
       <p><time datetime="2021-01-01">2021</time> - <time datetime="2022-01-01">2022</time></p>
-      <p>
-        I worked for the London-based free credit score and price comparison app TotallyMoney. During this time I
-        worked using F# as my primary language developing microservices in AWS. TotallyMoney services millions of 
-        customers, so my work involved a lot of event-based architecture, responding to and pushing to SNS and SQS.
-        Data storage was primarily DynamoDB and S3. High traffic meant that services needed to be resilient to traffic
-        spikes and service outages.
-      </p>
-      <p>
-        I worked on the customer onboarding email journey, maintaining a complex state machine that delivered 
-        emails to customers on a schedule. I was responsible for implementing new functionality to the state machine to 
-        support multiple email journey pathways which could be switched between depending on the customer's actions.
-        This allowed for a high degree of personalisation of the email journey for each customer, increasing 
-        customer engagement.
-      </p>
-      <p>
-         I also worked on the integration of open banking into the application, and the introduction of one-time
-         passcode authentication. During this time I was influential in the approaches we used to implement 
-         microservices in a resilient manner.
-      </p>
-      <h3>Technologies</h3>
-      <dl>
-        <dt>AWS</dt>
-        <dd>Lambda, Step Functions, DynamoDB, S3, SNS, SQS, CloudWatch</dd>
-
-        <dt>F#</dt>
-        <dd>Functional programming for microservices</dd>
-
-        <dt>Docker</dt>
-        <dd>Used containers for service deployments to virtual machines and for local testing environments</dd>
-
-        <dt>CI/CD</dt>
-        <dd>Serverless Framework, CircleCI, GitHub, Git</dd>
-      </dl>
+      <details>
+        <summary><h3>Senior Backend Engineer</h3></summary>
+        <p>
+          I worked for the London-based free credit score and price comparison app TotallyMoney. During this time I
+          worked using F# as my primary language developing microservices in AWS. TotallyMoney services millions of 
+          customers, so my work involved a lot of event-based architecture, responding to and pushing to SNS and SQS.
+          Data storage was primarily DynamoDB and S3. High traffic meant that services needed to be resilient to traffic
+          spikes and service outages.
+        </p>
+        <p>
+          I worked on the customer onboarding email journey, maintaining a complex state machine that delivered 
+          emails to customers on a schedule. I was responsible for implementing new functionality to the state machine to 
+          support multiple email journey pathways which could be switched between depending on the customer's actions.
+          This allowed for a high degree of personalisation of the email journey for each customer, increasing 
+          customer engagement.
+        </p>
+        <p>
+          I also worked on the integration of open banking into the application, and the introduction of one-time
+          passcode authentication. During this time I was influential in the approaches we used to implement 
+          microservices in a resilient manner.
+        </p>
+        <h3>Technologies</h3>
+        <dl>
+          <dt>AWS</dt>
+          <dd>Lambda, Step Functions, DynamoDB, S3, SNS, SQS, CloudWatch</dd>
+          <dt>F#</dt>
+          <dd>Functional programming for microservices</dd>
+          <dt>Docker</dt>
+          <dd>Used containers for service deployments to virtual machines and for local testing environments</dd>
+          <dt>CI/CD</dt>
+          <dd>Serverless Framework, CircleCI, GitHub, Git</dd>
+        </dl>
+      </details>
     </section>
     <section aria-labelledby="lpa-heading">
       <h2 id="lpa-heading">Luchst-Probst Associates</h2>
-      <h3>Senior Software Engineer</h3>
       <p><time datetime="2018-01-01">2018</time> - <time datetime="2021-01-01">2021</time></p>
-      <p>
-         I worked for the Frankfurt-based capital markets consultancy Luchst-Probst Associates as a Senior 
-         Software Engineer while living in Barcelona. I worked as a Full-Stack Developer on HedgePilot, 
-         a web application for managing foreign exchange exposure hedging using artificial intelligence.
-         The application was built using Angular with Typescript for the front end, ASP.NET Core for the
-         backend API, and SQL Server with EF Core for the database. The application was deployed on Azure, 
-         and we ran our agile process on Azure DevOps.
-      </p>
-      <p>
-         In particular, I worked on the validation and warning framework for both the front end forms, the 
-         maths libraries used for the many calculations done in the software, the cockpit, and the autosave 
-         functionality including debouncing, throttling and retry on errors. I made extensive use of RxJS, 
-         and Reactive Forms. I also did some work in Python improving the performance of the AI server, and
-         was able to improve the efficiency of the database access by significantly reducing the number of
-         database calls made by the application.
-      </p>
-      <p>
-         I mentored and taught junior developers, providing feedback and advocating software engineering 
-         with close adherence to good principles such as SOLID, KISS and YAGNI. In aid of this, I held 
-         several workshops to raise software engineering knowledge. I gave presentations on good 
-         practices in Angular (for example, making proper use of directives and pipes), RxJS, unit testing, 
-         and I gave an introductory presentation to all software engineers in the company on functional 
-         programming.
-      </p>
-      <h3>Technologies</h3>
-      <dl>
-        <dt>.Net Core</dt>
-        <dd>C#, ASP.NET Core, EF Core, Object-Oriented programming</dd>
-
-        <dt>Angular</dt>
-        <dd>Typescript, Kendo UI, RxJS, Reactive Forms</dd>
-
-        <dt>SQL Server</dt>
-        <dd>Relational database design, TSQL, indexes, triggers, row-based security, temporal tables</dd>
-
-        <dt>Python</dt>
-        <dd>Flask</dd>
-
-        <dt>Version control</dt>
-        <dd>Git, Azure Devops</dd>
-      </dl>
+      <details>
+        <summary><h3>Senior Software Engineer</h3></summary>
+        <p>
+           I worked for the Frankfurt-based capital markets consultancy Luchst-Probst Associates as a Senior 
+           Software Engineer while living in Barcelona. I worked as a Full-Stack Developer on HedgePilot, 
+           a web application for managing foreign exchange exposure hedging using artificial intelligence.
+           The application was built using Angular with Typescript for the front end, ASP.NET Core for the
+           backend API, and SQL Server with EF Core for the database. The application was deployed on Azure, 
+           and we ran our agile process on Azure DevOps.
+        </p>
+        <p>
+           In particular, I worked on the validation and warning framework for both the front end forms, the 
+           maths libraries used for the many calculations done in the software, the cockpit, and the autosave 
+           functionality including debouncing, throttling and retry on errors. I made extensive use of RxJS, 
+           and Reactive Forms. I also did some work in Python improving the performance of the AI server, and
+           was able to improve the efficiency of the database access by significantly reducing the number of
+           database calls made by the application.
+        </p>
+        <p>
+           I mentored and taught junior developers, providing feedback and advocating software engineering 
+           with close adherence to good principles such as SOLID, KISS and YAGNI. In aid of this, I held 
+           several workshops to raise software engineering knowledge. I gave presentations on good 
+           practices in Angular (for example, making proper use of directives and pipes), RxJS, unit testing, 
+           and I gave an introductory presentation to all software engineers in the company on functional 
+           programming.
+        </p>
+        <h3>Technologies</h3>
+        <dl>
+          <dt>.Net Core</dt>
+          <dd>C#, ASP.NET Core, EF Core, Object-Oriented programming</dd>
+          <dt>Angular</dt>
+          <dd>Typescript, Kendo UI, RxJS, Reactive Forms</dd>
+          <dt>SQL Server</dt>
+          <dd>Relational database design, TSQL, indexes, triggers, row-based security, temporal tables</dd>
+          <dt>Python</dt>
+          <dd>Flask</dd>
+          <dt>Version control</dt>
+          <dd>Git, Azure Devops</dd>
+        </dl>
+      </details>
     </section>
     <section aria-labelledby="renishaw-id">
       <h2 id="renishaw-id">Renishaw</h2>
-      <h3>Software Engineer</h3>
       <p><time datetime="2012-01-01">2012</time> - <time datetime="2018-01-01">2018</time></p>
-      <p>
-        I worked in the spectroscopy products division, working on the WiRE software suite, to control 
-        and gather data from Renishaw's Raman spectrometer products, and provide the user with tools to perform 
-        complex data analysis. As the bulk of the interface was written in MFC and WTL, I had a great deal of
-        experience working in C++ using COM. I was involved in five major projects: ongoing development of the 
-        main WiRE software; developing the prototype for a new interface for the software suite using WPF; 
-        work on a specialized software environment for a medical device called the “Assay Reader” for a 
-        subsidiary company using WinForms; work on the user experience for the RA802 pharmaceutical analyser, 
-        of which I was project lead; and the implementation of some of the mathematical analysis calculations in 
-        .NET, which involved some optimisation and multi-threaded programming.
-      </p>
-      <h3>Technologies</h3>
-      <dl>
-        <dt>C++</dt>
-        <dd>MFC, WTL, COM</dd>
-
-        <dt>.NET</dt>
-        <dd>C#, WPF, WinForms, Blocking collections</dd>
-
-        <dt>Version control</dt>
-        <dd>Git, TFS, JIRA</dd>
-      </dl>
+      <details>
+        <summary><h3>Software Engineer</h3></summary>
+        <p>
+          I worked in the spectroscopy products division, working on the WiRE software suite, to control 
+          and gather data from Renishaw's Raman spectrometer products, and provide the user with tools to perform 
+          complex data analysis. As the bulk of the interface was written in MFC and WTL, I had a great deal of
+          experience working in C++ using COM. I was involved in five major projects: ongoing development of the 
+          main WiRE software; developing the prototype for a new interface for the software suite using WPF; 
+          work on a specialized software environment for a medical device called the “Assay Reader” for a 
+          subsidiary company using WinForms; work on the user experience for the RA802 pharmaceutical analyser, 
+          of which I was project lead; and the implementation of some of the mathematical analysis calculations in 
+          .NET, which involved some optimisation and multi-threaded programming.
+        </p>
+        <h3>Technologies</h3>
+        <dl>
+          <dt>C++</dt>
+          <dd>MFC, WTL, COM</dd>
+          <dt>.NET</dt>
+          <dd>C#, WPF, WinForms, Blocking collections</dd>
+          <dt>Version control</dt>
+          <dd>Git, TFS, JIRA</dd>
+        </dl>
+      </details>
     </section>
   </main>
 </body>
