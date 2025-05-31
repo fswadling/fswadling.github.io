@@ -143,6 +143,7 @@ details {
   background: #f5f7fa;
   box-shadow: var(--box-shadow);
   transition: box-shadow 0.2s;
+  overflow: hidden; /* Fix border-radius gaps */
 }
 
 details[open] {
@@ -167,6 +168,7 @@ summary {
 details[open] > summary {
   background: var(--secondary-colour);
   color: #fff;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
 summary::-webkit-details-marker {
