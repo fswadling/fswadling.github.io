@@ -203,11 +203,12 @@ strong {
 
   main {
     padding: 0 1rem;
-    background: var(--background-colour);
+    background: #fff;
+    box-shadow: none;
   }
 
   body {
-    background: var(--background-colour);
+    background: #fff;
   }
 
   section {
